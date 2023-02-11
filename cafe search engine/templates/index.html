@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Cafe Search Engine</title>
+  </head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+  <body>
+    <img class="background" src="./static/img/background.png">
+    <img src="./static/img/logo.png">
+    <h1>Cafe Search</h1>
+    <br>
+    <div class="search_box">
+      <form method="GET" action="{{ url_for('search') }}">
+        <input type="text" class="form-control" name="keyword" placeholder="Find Cafe...">
+        <br><br>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+    </div>
+  </body>
+</html>
